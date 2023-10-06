@@ -1,21 +1,14 @@
-# código de geração do gráfico 
+# código de geração do gráfico
 import pandas as pd
 import seaborn as sns
 
-dados = pd.read_csv('gasolina.csv')
+dados_gasolina = pd.read_csv("gasolina.csv")
 
-with sns.axes_style('darkgrid'):
-  grafico = sns.lineplot(
-      data=dados, 
-      x='dia', 
-      y='venda'
-    )
-  
-  grafico.set(
-      title='Variação do preço da gasolina', 
-      ylabel='Preço (R$)', 
-      xlabel='Dia'
+with sns.axes_style("darkgrid"):
+    grafico = sns.lineplot(data=dados_gasolina, x="dia", y="venda")
+    grafico.set(
+        title="Valor medio diário da gasolina", xlabel="Dia", ylabel="Valor (R$)"
     )
 
-  imagem = grafico.get_figure()    
-  imagem.savefig('variacao_gasolina.png', dpi=500)
+    imagem = grafico.get_figure()
+    imagem.savefig("variacao_gasolina.png", dpi=500)
