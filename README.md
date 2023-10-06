@@ -16,7 +16,7 @@ Este repositório contém um projeto de análise de preços médios de venda da 
 
 ### 3. Análise de Dados e Visualização
 
-- Utilizando Python, Pandas e Seaborn, gere um gráfico de linha com os dados do arquivo `gasolina.csv`, onde o eixo x representa os dias e o eixo y representa os preços médios da gasolina.
+- Utilizando Python, Pandas e Seaborn, gere um gráfico de linha com os dados do arquivo `gasolina.csv`, onde o eixo x representa os dias e o eixo y representa os preços médios da gasolina
 - Salve o gráfico gerado no arquivo `gasolina.png`.
 - Salve o código Python de geração do gráfico no arquivo `gasolina.py`.
 
